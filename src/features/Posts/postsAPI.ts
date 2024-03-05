@@ -1,21 +1,21 @@
 export interface IUser {
-    id: Number,
-    email: String,
-    firstName: String,
-    lastName: String,
-    createdAt: String,
+    id: number,
+    email: string,
+    firstName: string,
+    lastName: string,
+    createdAt: string,
     isAdmin: boolean,
 }
 
 export interface IPost {
-    id: Number,
-    createdAt: String,
-    updatedAt: String,
-    title: String,
-    content: String,
-    published: Boolean,
+    id: number,
+    createdAt: string,
+    updatedAt: string,
+    title: string,
+    content: string,
+    published: boolean,
     author: IUser,
-    authorId?: Number,
+    authorId?: number,
 }
 
 export const exampleData: IPost[] = [
